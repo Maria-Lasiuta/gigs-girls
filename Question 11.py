@@ -1,7 +1,8 @@
 '''Question 11
-Write a program that generates a random decimal number between 1 and 10 with two decimal places of accuracy.'''
+Write a function that reverse the tuple.'''
 
-from random import uniform
-
-random_number = uniform(1, 10)
-print(round(random_number, 2))
+def reverse(tuples):
+    new_tup = tuples[::-1]
+    return new_tup
+tuples = (10, 'Hello', (1, 2, 3), 3.14)
+print(reverse(tuples))
